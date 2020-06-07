@@ -20,7 +20,7 @@ function click_btn(num) {
 	console.log("No."+num+"\n"+song_name+"\n"+singer+"\n\n"+other_text+"\n"+hash_tag1_text+"\n"+hash_tag2_text);
 
 	let post_text = "No."+num+"%0A"+song_name+"%0A"+singer+"%0A%0A"+other_text;
-	let url = "https://twitter.com/share?text="+post_text+"%0A&hashtags="+hash_tag1_text+"%0A&hashtags="+hash_tag2_text;
+	let url = "https://twitter.com/share?text="+post_text+"%0A&url=&hashtags="+hash_tag1_text+"%0A&hashtags="+hash_tag2_text;
 
 	window.open(url, 'tweetwindow', 'width=650, height=470, personalbar=0, toolbar=0, scrollbars=1, sizable=1');
 }
