@@ -25,26 +25,30 @@
 		<p>ハッシュタグ2</p>
 		<input class="form-control" type="text" id="hash_tag2" />
 		<br>
-		<table class="table" id="tb1">
-			<thead class="thead-dark">
-				<tr>
-					<th>#</th>
-					<th>曲名</th>
-					<th>歌手</th>
-					<th>その他</th>
-					<th>投稿</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>1</td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><input class="form-control" type="text" name=""></td>
-					<td><textarea id="my-textarea" class="form-control" name="" rows="1"></textarea></td>
-					<td><button class="btn btn-primary" type="button" onclick="click_btn(1);">投稿</button></td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="table-responsive">
+			<table class="table text-nowrap" id="tb1">
+				<thead class="thead-dark">
+					<tr>
+						<th>#</th>
+						<th>曲名</th>
+						<th>アーティスト</th>
+						<th>作品など</th>
+						<th>その他</th>
+						<th>投稿</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><input class="form-control" type="text" name=""></td>
+						<td><input class="form-control" type="text" name=""></td>
+						<td><input class="form-control" type="text" name=""></td>
+						<td><textarea id="my-textarea" class="form-control" name="" rows="1"></textarea></td>
+						<td><button class="btn btn-primary" type="button" onclick="click_btn(1);">投稿</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 		<button class="btn btn-primary" type="button" onclick="addrow();">追加</button>
 		<button class="btn btn-primary" type="button" onclick="delrow();">削除</button>
 	</body>
